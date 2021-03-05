@@ -7,10 +7,12 @@
 
 #pragma once
 
+#include <vector>
 #include "ui.hpp"
 
 class UIManager
 {
     public:
     private:
+        std::vector<UI &> _elements;
 };
