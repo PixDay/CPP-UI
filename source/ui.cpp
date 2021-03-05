@@ -18,59 +18,99 @@ UI::UI():
 {};
 
 // SETTER
-void UI::setSprite      (std::string    &texture)
+void UI::setSprite(std::string &texture)
 {
     _texture.loadFromFile(texture);
     _sprite.setTexture(_texture, false);
 }
 
-void UI::setTag         (std::string    &tag)
+void UI::setTag(std::string &tag)
 {
     _tag = tag;
 }
 
-void UI::setType        (std::string    &type)
+void UI::setType(std::string &type)
 {
     _type = type;
 }
 
-void UI::setPosition    (sf::Vector2f   &position)
+void UI::setPosition(sf::Vector2f &position)
 {
     _position = position;
 }
 
-void UI::setPosition    (float          &x,          float   &y)
+void UI::setPosition(float &x, float &y)
 {
     _position = (sf::Vector2f){x, y};
 }
 
-void UI::setScale       (sf::Vector2f   &scale)
+void UI::setScale(sf::Vector2f &scale)
 {
     _scale = scale;
 }
 
-void UI::setScale       (float          &x,          float   &y)
+void UI::setScale(float &x, float &y)
 {
     _scale = (sf::Vector2f){x, y};
 }
 
-void UI::setOrigin      (sf::Vector2f   &origin)
+void UI::setOrigin(sf::Vector2f &origin)
 {
     _origin = origin;
 }
 
-void UI::setOrigin      (float          &x,          float   &y)
+void UI::setOrigin(float &x, float &y)
 {
     _origin = (sf::Vector2f){x, y};
 }
 
-void UI::setLayout      (size_t         &layout)
+void UI::setLayout(size_t &layout)
 {
     _layout = layout;
 }
 
-void UI::setActive      (bool           &active)
+void UI::setActive(bool &active)
 {
     _active = active;
 }
-     
+
+// GETTER
+sf::Sprite UI::getSprite(void) const
+{
+    return _sprite;
+}
+
+std::string UI::getTag(void) const
+{
+    return _tag;
+}
+
+std::string UI::getType(void) const
+{
+    return _type;
+}
+
+sf::Vector2f UI::getPosition(void) const
+{
+    return _position;
+}
+
+sf::Vector2f UI::getScale(void) const
+{
+    return _scale;
+}
+
+sf::Vector2f UI::getOrigin(void) const
+{
+    return _origin;
+}
+
+size_t UI::getLayout(void) const
+{
+    return _layout;
+}
+
+bool UI::getActive(void) const
+{
+    return _active;
+}
