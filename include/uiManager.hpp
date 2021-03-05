@@ -13,6 +13,9 @@
 class UIManager
 {
     public:
+        UIManager();
+       ~UIManager() = default;
+
     private:
         std::vector<UI &> _elements;
 };
