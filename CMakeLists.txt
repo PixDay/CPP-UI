@@ -1,3 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 project(CPP-UI)
+
+add_library(
+    cpp-ui SHARED
+)
