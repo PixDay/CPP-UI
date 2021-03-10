@@ -41,7 +41,8 @@ void UI::setPosition(sf::Vector2f &position)
 
 void UI::setPosition(float &x, float &y)
 {
-    _position = (sf::Vector2f){x, y};
+    _position.x = x;
+    _position.y = y;
 }
 
 void UI::setScale(sf::Vector2f &scale)
@@ -51,7 +52,8 @@ void UI::setScale(sf::Vector2f &scale)
 
 void UI::setScale(float &x, float &y)
 {
-    _scale = (sf::Vector2f){x, y};
+    _scale.x = x;
+    _scale.y = y;
 }
 
 void UI::setOrigin(sf::Vector2f &origin)
@@ -61,7 +63,8 @@ void UI::setOrigin(sf::Vector2f &origin)
 
 void UI::setOrigin(float &x, float &y)
 {
-    _origin = (sf::Vector2f){x, y};
+    _origin.x = x;
+    _origin.y = y;
 }
 
 void UI::setLayout(size_t &layout)
