@@ -1,32 +1,24 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(CPP-UI)
+project(APP)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-INCLUDE_DIRECTORIES(
-  "${CMAKE_SOURCE_DIR}/include"
-  "${CMAKE_SOURCE_DIR}/SFML-2.5.1/include"
+ADD_SUBDIRECTORY(GFX)
+ADD_SUBDIRECTORY(lib)
+
+SET(APP_EXE application)
+
+INCLUDE_DIRECTORIES (
+    "${CMAKE_SOURCE_DIR}/lib/cpp-ui"
+    "${CMAKE_SOURCE_DIR}/GFX/SFML-2.5.1/include"
 )
 
-add_library(
-    cpp-ui STATIC
-    source/ui.cpp
-)
-
-SET(APP_EXE a.out)
-
-ADD_EXECUTABLE( ${APP_EXE}
+ADD_EXECUTABLE(${APP_EXE}
     source/main.cpp
 )
 
-TARGET_LINK_LIBRARIES( ${APP_EXE}
-    cpp-ui
-)
-
-SET_TARGET_PROPERTIES( ${APP_EXE}
-    PROPERTIES
-    LINK_FLAGS
-    "-lsfml-graphics -lsfml-window -lsfml-system"
+TARGET_LINK_LIBRARIES(${APP_EXE} 
+    PUBLIC cpp-ui
 )
