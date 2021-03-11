@@ -1,0 +1,10 @@
+^C:\USERS\ADRIE\DESKTOP\ADRIEN\CODE\CPP-UI\GFX\SFML-2.5.1\BUILD\CMAKEFILES\EE13D3AA5E1B0D9EB6B649905652D64F\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/adrie/Desktop/Adrien/Code/CPP-UI/GFX/SFML-2.5.1 -BC:/Users/adrie/Desktop/Adrien/Code/CPP-UI/GFX/SFML-2.5.1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/adrie/Desktop/Adrien/Code/CPP-UI/GFX/SFML-2.5.1/build/SFML.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

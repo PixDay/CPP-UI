@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\adrie\Desktop\Adrien\Code\CPP-UI\GFX\SFML-2.5.1\src\SFML\Main\MainWin32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\adrie\Desktop\Adrien\Code\CPP-UI\GFX\SFML-2.5.1\src\SFML\Main\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{076B2ADC-5F65-3A70-9B01-65EB3FB87902}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
