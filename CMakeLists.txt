@@ -18,7 +18,3 @@ INCLUDE_DIRECTORIES (
 ADD_EXECUTABLE(${APP_EXE}
     source/main.cpp
 )
-
-TARGET_LINK_LIBRARIES(${APP_EXE} 
-    PUBLIC cpp-ui
-)
